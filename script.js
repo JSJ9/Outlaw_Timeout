@@ -1,4 +1,5 @@
 let countdown;
+
 function startTimer() {
     const minutes = document.getElementById('minutes').value;
     const seconds = document.getElementById('seconds').value;
