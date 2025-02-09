@@ -1,9 +1,13 @@
 {
     "name": "Outlaw Timeout",
-    "description": "Base Level Extension",
+    "description": "Base Level Extension with Timer",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
       "default_popup": "index.html"
-    }
+    },
+    "permissions": [
+      "storage"
+    ]
   }
+  

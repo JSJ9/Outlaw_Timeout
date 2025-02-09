@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Outlaw Timeout</title>
-    </head>
-    <body>
-        <h1>Outlaw Timeout</h1>
-        <p>Keep track of your screen time.</p>
 
-        <h1>Timer</h1>
-        <div id="timer">00:00</div> <!-- Timer display -->
-        <input type="number" id="minutes" placeholder="Minutes" min="1">
-        <input type="number" id="seconds" placeholder="Seconds" min="0"
-            max="59">
-        <button onclick="startTimer()">Start Timer</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <p>https://www.youtube.com/watch?v=P2EKVoUQXv4</p>
+<body>
+    <div class="container">
+        <h1>Timer App</h1>
+        <p>The timer background is green means the timer is running</p>
+        <p>The timer background is white means you can set the timer</p>
+        <div class="timing">
+            <input type="number" id="hour" min="0" step="1" placeholder="hh"></input>
+            <h2 class="colon"> : </h2>
+            <input type="number" id="min" min="0" step="1" placeholder="mm"></input>
+            <h2 class="colon"> : </h2>
+            <input type="number" id="sec" min="0" step="1" placeholder="ss"></input>
+        </div>
+        <div class="buttons">
+            <button id="start">Start Timer</button>
+            <button id="reset" >Reset Timer</button>
+        </div>
+    </div>
 
-        <script src="script.js"></script>
-    </body>
+    <script src="popup.js"></script>
+</body>
+
 </html>
