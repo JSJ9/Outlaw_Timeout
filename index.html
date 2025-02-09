@@ -3,77 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Outlaw Timeout Timer</title>
-        <style>
-        /* Fullscreen popup styling */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
-
-        #popup-content {
-            background: white;
-            width: 80%;
-            height: 80%;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2em;
-        }
-
-        #timer {
-            font-size: 3em;
-            margin: 20px 0;
-        }
-
-        input, button {
-            padding: 10px;
-            margin-top: 10px;
-            font-size: 1em;
-        }
-
-        button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        input {
-            width: 80px;
-            margin: 5px;
-        }
-    </style>
+        <title>Outlaw Timeout</title>
     </head>
     <body>
-        <div id="popup-content">
-            <h1>Outlaw Timeout Timer</h1>
-            <div id="timer">00:00</div>
+        <h1>Outlaw Timeout</h1>
+        <p>Keep track of your screen time.</p>
 
-            <input type="number" id="minutes" placeholder="Minutes" min="0">
-            <input type="number" id="seconds" placeholder="Seconds" min="0"
-                max="59">
-            <button onclick="startTimer()">Start Timer</button>
-        </div>
+        <h1>Timer</h1>
+        <div id="timer">00:00</div> <!-- Timer display -->
+        <input type="number" id="minutes" placeholder="Minutes" min="1">
+        <input type="number" id="seconds" placeholder="Seconds" min="0"
+            max="59">
+        <button onclick="startTimer()">Start Timer</button>
 
-        <script src="popup.js"></script>
+        <p>https://www.youtube.com/watch?v=P2EKVoUQXv4</p>
+
+        <script src="script.js"></script>
     </body>
 </html>
