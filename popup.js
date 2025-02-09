@@ -19,8 +19,8 @@ function startTime() {
     let totalTime = (parseInt(hours) * 3600) + (parseInt(minutes) * 60) + parseInt(seconds);
     const timerDisplay = document.querySelector('.timing');
 
-    // Change background to green to indicate the timer is running
-    timerDisplay.style.backgroundColor = 'green';
+    // // Change background to green to indicate the timer is running
+    // timerDisplay.style.backgroundColor = 'green';
     isRunning = true;
 
     countdown = setInterval(() => {
@@ -58,12 +58,21 @@ function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
 
+function popupPage() {
+    window.open("https://statscanva1234.my.canva.site/", "_blank");
+}
+
 // Add event listeners when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     const startButton = document.getElementById('start');
     const resetButton = document.getElementById('reset');
 
+    const statsButton = document.getElementById('stats');
+
     // Attach event listeners to buttons
     startButton.addEventListener('click', startTime);
     resetButton.addEventListener('click', resetTime);
+    statsButton.addEventListener('click', popupPage);
 });
+
+
