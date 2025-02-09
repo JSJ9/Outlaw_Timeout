@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 300px;
+    width: 400px;
 }
 
 .container {
@@ -21,8 +21,9 @@ h1 {
 
 .timing {
     display: flex;
-    margin: 20px;
-    font-size: 3rem;
+    flex-direction: row;
+    margin: 1px;
+    font-size: 1rem;
     margin-bottom: 60px;
     margin-top: 40px;
 }
@@ -34,9 +35,10 @@ h2 {
 input[type="number"] {
     border: none;
     outline: none;
-    font-size: 3rem;
+    font-size: 2rem;
     display: block;
-    width: 120px;
+    width: 70px;
+    background-color: red;
     text-align: center;
 }
 
@@ -72,7 +74,7 @@ button:hover {
     color: white;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .container {
         margin: 20px 10px;
     }
@@ -86,7 +88,8 @@ button:hover {
     }
 
     input {
-        display: block;
+        display: flex;
+        
         margin: 20px 10px;
     }
 
