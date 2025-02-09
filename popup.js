@@ -27,8 +27,9 @@ function startTime() {
         if (totalTime <= 0) {
             clearInterval(countdown);
             timerDisplay.style.backgroundColor = 'white'; // Reset the background color
-            alert('Time is up!');
+            alert('Time is up! Please do not pause the upcoming video!');
             isRunning = false;
+            window.open("https://www.youtube.com/embed/P2EKVoUQXv4?autoplay=1&controls=0&disablekb=1&rel=0&showinfo=0&modestbranding=1", "_blank");
         } else {
             totalTime--;
             const h = Math.floor(totalTime / 3600);
