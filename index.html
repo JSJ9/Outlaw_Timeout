@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Outlaw Timeout</title>
+        <title>Outlaw Timeout Timer</title>
         <style>
         /* Fullscreen popup styling */
         body, html {
@@ -42,6 +42,7 @@
         input, button {
             padding: 10px;
             margin-top: 10px;
+            font-size: 1em;
         }
 
         button {
@@ -55,6 +56,11 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        input {
+            width: 80px;
+            margin: 5px;
+        }
     </style>
     </head>
     <body>
@@ -62,7 +68,7 @@
             <h1>Outlaw Timeout Timer</h1>
             <div id="timer">00:00</div>
 
-            <input type="number" id="minutes" placeholder="Minutes" min="1">
+            <input type="number" id="minutes" placeholder="Minutes" min="0">
             <input type="number" id="seconds" placeholder="Seconds" min="0"
                 max="59">
             <button onclick="startTimer()">Start Timer</button>
